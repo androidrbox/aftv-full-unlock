@@ -1,0 +1,3 @@
+[submodule "android-external-openssl-ndk-static"]
+	path = android-external-openssl-ndk-static
+	url = https://github.com/guardianproject/android-external-openssl-ndk-static
