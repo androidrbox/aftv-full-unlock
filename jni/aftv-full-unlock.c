@@ -75,7 +75,7 @@ int main(int argc, char **argv)
     close(fd);
     ul_manfid = strtoul(c_manfid, NULL, 16);
     ul_serial = strtoul(c_serial, NULL, 16);
-    snprintf(c_unlock, sizeof(c_unlock), "0x%02lX%08lX", ul_manfid, ul_serial);
+    snprintf(c_unlock, sizeof(c_unlock), "0x%02lx%08lx", ul_manfid, ul_serial);
 
     // Calculate a maximum BIGNUM with FF trailing padding
     memset(c_unlock + UNLOCK_SIZE, 0xFF, SIGNATURE_SIZE - UNLOCK_SIZE);
